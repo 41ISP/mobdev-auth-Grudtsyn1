@@ -5,10 +5,14 @@
       "content": "fdsf",
       "userId": 1,
       "username": "pasha",
-      "likes": 0,
-      "reports": 0,
-      "likedBy": [],
-      "reportedBy": [],
+      "likes": 1,
+      "reports": 1,
+      "likedBy": [
+        2
+      ],
+      "reportedBy": [
+        2
+      ],
       "createdAt": "2025-10-07T16:45:52.058Z"
     },
     {
@@ -16,11 +20,85 @@
       "content": "dsa",
       "userId": 1,
       "username": "pasha",
+      "likes": 1,
+      "reports": 1,
+      "likedBy": [
+        2
+      ],
+      "reportedBy": [
+        2
+      ],
+      "createdAt": "2025-10-07T16:48:09.503Z"
+    },
+    {
+      "id": 3,
+      "content": "fgjhtyjuyt",
+      "userId": 2,
+      "username": "123",
+      "likes": 1,
+      "reports": 0,
+      "likedBy": [
+        2
+      ],
+      "reportedBy": [],
+      "createdAt": "2026-10-12T04:35:50.467Z"
+    },
+    {
+      "id": 4,
+      "content": "dtykytdk",
+      "userId": 2,
+      "username": "123",
       "likes": 0,
       "reports": 0,
       "likedBy": [],
       "reportedBy": [],
-      "createdAt": "2025-10-07T16:48:09.503Z"
+      "createdAt": "2026-10-12T04:35:51.713Z"
+    },
+    {
+      "id": 6,
+      "content": "nk;n;nk;",
+      "userId": 2,
+      "username": "123",
+      "likes": 0,
+      "reports": 0,
+      "likedBy": [],
+      "reportedBy": [],
+      "createdAt": "2026-10-12T04:35:56.632Z"
+    },
+    {
+      "id": 7,
+      "content": "qwtt6243523465;n;nk;",
+      "userId": 2,
+      "username": "123",
+      "likes": 1,
+      "reports": 0,
+      "likedBy": [
+        2
+      ],
+      "reportedBy": [],
+      "createdAt": "2026-10-12T04:35:58.451Z"
+    },
+    {
+      "id": 7,
+      "content": "adsasdas",
+      "userId": 2,
+      "username": "123",
+      "likes": 0,
+      "reports": 0,
+      "likedBy": [],
+      "reportedBy": [],
+      "createdAt": "2026-10-12T05:10:41.723Z"
+    },
+    {
+      "id": 8,
+      "content": "lkmkm",
+      "userId": 2,
+      "username": "123",
+      "likes": 0,
+      "reports": 0,
+      "likedBy": [],
+      "reportedBy": [],
+      "createdAt": "2026-10-12T05:13:47.652Z"
     }
   ],
   "users": [
@@ -30,6 +108,13 @@
       "email": "pasha@example.com",
       "password": "$2b$10$h92e990XlgD1hreAWfLzKuWrwWgP9j8IWJRQPn72u3MJZTt3yLWRC",
       "createdAt": "2025-10-07T16:22:34.688Z"
+    },
+    {
+      "id": 2,
+      "username": "123",
+      "email": "123@123",
+      "password": "$2b$10$DEc2z3rBqGTCYlAcF1h0vuxUcATmpuBI6K64YQTjBpmS7wOSv8YX.",
+      "createdAt": "2026-10-12T04:34:28.729Z"
     }
   ]
 }

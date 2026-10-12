@@ -1,7 +1,18 @@
 import { useUserStore } from "../store/useUserStore"
+import {api} from '../api/api'
+import { useEffect } from "react"
 
-const MessageCard = ({ userId, likes, content, username, createdAt }) => {
+const MessageCard = ({ id, userId, likes, likedBy, content, username, createdAt }) => {
     const {session} = useUserStore()
+    const handleLike = async() => {
+        await api.likeMessage(id)
+    }
+    const handleDelete = async() => {
+        await api.deleteMessage(id)
+    }
+    const handleReport = async() => {
+        await api.reportMessage(id)
+    }
     return (
         <div className="message-card">
             <div className="message-content">{content}</div>
@@ -10,18 +21,24 @@ const MessageCard = ({ userId, likes, content, username, createdAt }) => {
                 <span className="message-time">{createdAt}</span>
             </div>
             <div className="message-actions">
-                <button className="action-button">
-                    <span>{likes} 💗🤍</span>
+               {session?.user && (
+                <>
+                <button className="action-button" onClick={handleLike}>
+                    <span>{likes} {likedBy.includes(session.user.id) ? "💗" : "🤍"}</span>
                     <span>Нравится</span>
                 </button>
-                <button className="action-button">
+                <button className="action-button" onClick={handleReport}>
                     <span>🚩</span>
                     <span>Пожаловаться</span>
                 </button>
-                <button className="action-button delete">
+                </>
+                )}
+                {userId === session?.user.id && (
+                <button className="action-button delete" onClick={handleDelete}>
                     <span>❌</span>
                     <span>Удалить</span>
                 </button>
+                )}
             </div>
         </div>
     )

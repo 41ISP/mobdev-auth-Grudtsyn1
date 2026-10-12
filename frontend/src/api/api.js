@@ -2,7 +2,7 @@ import axios from "axios"
 import { useUserStore } from "../store/useUserStore"
 
 const apiInstance = axios.create({
-    baseURL: "https://api.kitek-pg.ru/api/feedback/",
+    baseURL: "https://opulent-pancake-g9gwwpg44ggc9xp7-3001.app.github.dev/api/",
     headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
